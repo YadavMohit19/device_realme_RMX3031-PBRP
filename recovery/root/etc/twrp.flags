@@ -11,7 +11,7 @@
 /recovery         emmc     /dev/block/by-name/recovery                flags=backup=1;display="Recovery"
 /vbmeta           emmc     /dev/block/by-name/vbmeta                  flags=backup=1;display="VBMeta";flashimg=1
 
-/data             f2fs     /dev/block/by-name/userdata                fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
+/data             f2fs     /dev/block/by-name/userdata                flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
 /metadata         ext4     /dev/block/by-name/metadata                flags=display="Metadata"
 
 /protect_f        ext4    /dev/block/by-name/protect1                 flags=display="Protect_F";backup=1;
