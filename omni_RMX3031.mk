@@ -17,15 +17,15 @@
 #
 
 # Inherit from those products. Most specific first.
+$(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_DEVICE := RMX3031
-PRODUCT_NAME := pb_RMX3031
+PRODUCT_NAME := omni_RMX3031
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme x7 Max
 PRODUCT_MANUFACTURER := Realme
