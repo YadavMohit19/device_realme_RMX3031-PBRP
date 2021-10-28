@@ -16,4 +16,7 @@
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
+    <!-- FOD recognizing animation vertical position offset -->
+    <dimen name="fod_animation_offset">1.0px</dimen>
+
 </resources>
