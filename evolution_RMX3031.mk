@@ -24,6 +24,9 @@ $(call inherit-product, device/realme/RMX3031/device.mk)
 # Inherit some common Pixel-Experience stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_RMX3031
 PRODUCT_DEVICE := RMX3031
